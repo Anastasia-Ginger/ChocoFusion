@@ -1,3 +1,98 @@
 @import "bootstrap.css";
 @import "bootstrap-grid.css";
 @import "bootstrap-reboot.css";
+@font-face {
+  font-family: 'Helvetica Neue LT Std';
+  src: url('../fonts/HelveticaNeueLTStd-BdEx.eot');
+  src: url('../fonts/HelveticaNeueLTStd-BdEx.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/HelveticaNeueLTStd-BdEx.woff2') format('woff2'),
+  url('../fonts/HelveticaNeueLTStd-BdEx.woff') format('woff'),
+  url('../fonts/HelveticaNeueLTStd-BdEx.ttf') format('truetype'),
+  url('../fonts/HelveticaNeueLTStd-BdEx.svg#HelveticaNeueLTStd-BdEx') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+.button-white{
+  a {
+    text-decoration: none;
+    font-size: 24px;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 700;
+    color: #FFFFFF;
+    align-items: center;
+    display: flex;
+  }
+  img {
+    width: 100%;
+    max-width: 51px;
+    margin-left: 15px;
+    height: auto;
+    display: inline-block;
+  }
+}
+.button-blue {
+  a {
+    text-decoration: none;
+    font-size: 24px;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 500;
+    color: #194798;
+    align-items: center;
+    display: flex;
+  }
+  img {
+    width: 100%;
+    max-width: 51px;
+    margin-left: 15px;
+    height: auto;
+    display: inline-block;
+  }
+}
+h3{
+  font-family: "Helvetica Neue LT Std", sans-serif;
+  font-size: 90px;
+  font-weight: 700;
+  color: #EB513C;
+}
+body{
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+}
+.main_page {
+  background-image: url("../images/main-page.jpg");
+  height: 100vh;
+  background-size: cover;
+  align-items: center;
+  position: relative;
+  .h1_main-page{
+    position: absolute;
+    top: 43%;
+    margin-top: -154px;
+    left: 10%;
+    h1{
+      font-family: "Helvetica Neue LT Std", sans-serif;
+      font-size: 90px;
+      font-weight: 700;
+      color: white;
+    }
+  }
+}
+.look-for-smth{
+  background: linear-gradient(to right, #ECECEC 70%, #FB957E 30%);
+  .choco-bg{
+    background-image: url("../images/look_for_smth.jpg");
+    background-size: cover;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+  }
+  .photo-description{
+    width: 100%;
+    bottom: 10%;
+    left: 0;
+    margin-bottom: -20px;
+  }
+}
