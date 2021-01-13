@@ -12,7 +12,7 @@
   text-decoration: none;
   font-size: 24px;
   font-family: 'Maven Pro', sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   color: #FFFFFF;
   align-items: center;
   display: flex; }
@@ -21,13 +21,16 @@
   max-width: 51px;
   margin-left: 15px;
   height: auto;
-  display: inline-block; }
+  display: inline-block;
+  transition: 0.3s; }
+.button-white:hover img {
+  margin-left: 25px; }
 
 .button-blue a {
   text-decoration: none;
   font-size: 24px;
   font-family: 'Maven Pro', sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   color: #194798;
   align-items: center;
   display: flex; }
@@ -36,13 +39,19 @@
   max-width: 51px;
   margin-left: 15px;
   height: auto;
-  display: inline-block; }
+  display: inline-block;
+  transition: 0.3s; }
+.button-blue:hover img {
+  margin-left: 25px; }
 
 h3 {
   font-family: "Helvetica Neue LT Std", sans-serif;
   font-size: 90px;
   font-weight: 700;
   color: #EB513C; }
+  @media (max-width: 1400px) {
+    h3 {
+      font-size: 70px; } }
 
 body {
   font-family: Roboto, sans-serif;
@@ -64,6 +73,11 @@ body {
       font-size: 90px;
       font-weight: 700;
       color: white; }
+      @media (max-width: 1400px) {
+        .main_page .h1_main-page h1 {
+          font-size: 70px; } }
+  .main_page .button-white a {
+    font-weight: 700; }
 
 .look-for-smth {
   background: linear-gradient(to right, #ECECEC 70%, #FB957E 30%); }
@@ -78,5 +92,102 @@ body {
     bottom: 10%;
     left: 0;
     margin-bottom: -20px; }
+
+.big-slogan {
+  font-size: 8.9vw;
+  font-family: "Helvetica Neue LT Std", sans-serif;
+  color: white;
+  z-index: 2;
+  width: 100%;
+  top: 14%; }
+
+.who_we_are {
+  background-color: #E25242;
+  height: 100vh;
+  position: relative; }
+  .who_we_are .choco-bg {
+    background-image: url("../images/who_we_are.jpg");
+    background-size: cover;
+    align-items: center;
+    position: relative;
+    height: 100vh; }
+
+.rrrr {
+  height: 100vh; }
+
+.most-popular {
+  background-color: #E9E9EC;
+  padding-top: 150px; }
+  .most-popular .choco-photo {
+    position: relative; }
+    .most-popular .choco-photo:hover .overlay {
+      opacity: 1; }
+  .most-popular .choco-example {
+    width: 25%;
+    padding: 10px; }
+    .most-popular .choco-example img {
+      width: 100%; }
+    .most-popular .choco-example h4 {
+      color: #E25242; }
+    .most-popular .choco-example p {
+      color: #606060; }
+  .most-popular .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    padding: 10px 15px;
+    transition: 0.5s ease;
+    background-color: white; }
+    .most-popular .overlay .btn-Discover {
+      display: inline-block;
+      text-decoration: none;
+      font-size: 18px;
+      font-family: 'Maven Pro', sans-serif;
+      font-weight: 400;
+      color: #194798;
+      border: 1px solid #194798;
+      max-width: 310px;
+      width: 100%;
+      padding: 18px;
+      transition: 0.5s; }
+      .most-popular .overlay .btn-Discover:hover {
+        background-color: #194798;
+        color: white; }
+    .most-popular .overlay .btn-Add-to-card {
+      display: inline-block;
+      text-decoration: none;
+      font-size: 18px;
+      font-family: 'Maven Pro', sans-serif;
+      font-weight: 400;
+      color: #194798;
+      width: 100%;
+      margin-bottom: 10px; }
+      .most-popular .overlay .btn-Add-to-card:hover {
+        font-weight: 700; }
+  .most-popular .ingredients {
+    padding: 0 20px; }
+    @media (max-width: 1500px) {
+      .most-popular .ingredients img {
+        width: 100%; } }
+
+.blog {
+  background-color: #2A4999; }
+  .blog .blog-bg {
+    background-image: url("../images/blog-bg.jpg");
+    background-size: cover;
+    width: 100%; }
+
+h2 {
+  font-family: "Helvetica Neue LT Std", sans-serif;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 85px; }
+  @media (max-width: 1400px) {
+    h2 {
+      font-size: 50px;
+      line-height: 60px; } }
 
 /*# sourceMappingURL=style.css.map */
